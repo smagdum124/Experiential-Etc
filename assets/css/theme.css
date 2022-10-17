@@ -60,7 +60,7 @@
 .mcurtain {
 	opacity: 0;
 	position: absolute;
-	width: 34%;
+	width: 100%;
 	height: 100%;
 	top: 0;
 	-webkit-transform-origin: center top;
@@ -82,18 +82,18 @@
 }
 
 .mcurtain-left {
-	left: 0;
-	background-image: url(../../assets/images/curtain-background-left.svg);
+/* 	left: 0; */
+/* 	background-image: url(../../assets/images/curtain-background-left.svg); */
 }
 
 .mcurtain-center {
-	background-image: url(../../assets/images/curtain-background-center.svg);
-	left: 33.333%;
+/* 	background-image: url(../../assets/images/curtain-background-center.svg); */
+/* 	left: 33.333%; */
 }
 
 .mcurtain-right {
-	background-image: url(../../assets/images/curtain-background-right.svg);
-	left: 66.666%;
+/* 	background-image: url(../../assets/images/curtain-background-right.svg); */
+/* 	left: 66.666%; */
 }
 
 .sk__master-curtain {
