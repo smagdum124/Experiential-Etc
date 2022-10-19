@@ -934,7 +934,7 @@ $(document).ready(function(){
 		
 		gsap.to(proxy, {
 			val: +num,
-			duration: 25,
+			duration: 10,
 			scrollTrigger: {
 				trigger: element,
 				toggleActions: "restart none none none"
