@@ -1617,7 +1617,7 @@ span.sk__menu-icon:not(.accented):not(.sk__gradient-back-v1) span[class^="icon-"
 @media all and (min-width: 992px) and (max-width: 1900px) {
 
 	body.sk__scrolling-started .sk__mobile-menu-bar {
-		height: 72px;
+		height: 92px;
 	}
 	
 	.sk__mobile-main-logo img {
