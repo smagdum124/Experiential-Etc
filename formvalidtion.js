@@ -48,10 +48,10 @@ const validateInputs = () => {
     }
 
 };
-function validateForm() {
-  let x = document.getElementById('message').value;
-  if (x == "") {
-    alert("please fill out the required fields.");
-    return false;
-  }
-}
+// function validateForm() {
+//   let x = document.getElementById('message').value;
+//   if (x == "") {
+//     setError(message,"please fill out the required fields.");
+//     return false;
+//   }
+// }
