@@ -82,6 +82,18 @@
 
 	<main id="primary" class="site-main">
 
+		<!-- Master Curtain Effect -->
+		<!-- <section class="sk__master-curtain">
+			<div class="mcurtain mcurtain-left"></div>
+			<div class="mcurtain mcurtain-center">
+				<video class="sk__video" preload="none" poster="assets/video/video bg.mp4" autoplay="" loop="" muted=""
+					playsinline="">
+					<source src="assets/video/video bg.mp4" type="video/mp4">Your browser does not support HTML5 video.
+				</video>
+			</div>
+			<div class="mcurtain mcurtain-right"></div>
+		</section> -->
+
 		<!-- Back to top button -->
 		<div class="sk__back-to-top-wrap">
 			<a class="sk__back-to-top" href="#smooth-content"><span class="sk__back-to-top"></span></a>
@@ -93,63 +105,295 @@
 
 		<!-- Mobile Menu Logo -->
 		<!-- Mobile Menu Logo -->
-		<a class="sk__mobile-main-logo" href="./index.html"><img style="margin: 30px 0px 0px 30px ;" alt="Website logo."
+		<a class="sk__mobile-main-logo" href="#"><img style="margin-left:30px;margin-top:30px;" alt="Website logo."
 				src="assets/images/logo1.png"></a>
 
-				<nav id="main-nav" style="opacity: 0;"
-				class="sk__menu navbar sk__navbar navbar-expand-lg navbar-dark static-top">
-	
-				<!-- Desktop Menu Logo -->
-				<a class="navbar-brand" href="#"><img  id="sk__main-logo" alt="Website logo."
-						src="assets/images/logo1.png"></a>
-	
-				<!-- The Menu -->
-				<ul class="navbar-nav ms-auto">
-	
-					<!-- Mobile Menu Logo (only use if "close" buttons are set to false in JS) -->
-					<li data-nav-custom-content class="custom-content sk__mobile-menu-logo">
-						<a class="sk__mobile-navbar-brand" href="#"><img style="margin-top: 13px;" alt="Website mobile logo."
-								src="assets/images/logo.png"></a>
-					</li>
-					<li class="nav-item"><a class="nav-link" href="./index.html"><span class="sk__menu-icon"><span
-									class="icon-home"></span></span>Home</a></li>
-					<li class="nav-item"><a class="nav-link" href="page-about-us.html"><span class="sk__menu-icon"><span
-									class="icon-user-circle"></span></span>About Us</a></li>
-					<li class="nav-item"><a class="nav-link" href="page-services.html"><span class="sk__menu-icon"><span
-									class="icon-th"></span></span>Services</a></li>
-					<li class="nav-item"><a class="nav-link" href="page-portfolio.html"><span class="sk__menu-icon"><span
-									class="icon-th"></span></span>Portfolio</a></li>
-					<li class="nav-item"><a class="nav-link" href="page-features.html"><span class="sk__menu-icon"><span
-									class="icon-table2"></span></span>Features</a></li>
-					<li class="nav-item"><a class="nav-link" href="page-news.html"><span class="sk__menu-icon"><span
-									class="icon-list-alt"></span></span>Blog</a></li>
-					<li class="nav-item"><a class="nav-link" href="page-contact-us.html"><span class="sk__menu-icon"><span
-									class="icon-envelope-o"></span></span>Contact Us</a></li>
-	
-					</li>
-	
-	
-					<!-- Mobile Menu Social Icons -->
-					<li data-nav-custom-content class="custom-content sk__menu-socials">
-						<section class="footer-socials-section">
-							<h3><strong>Connect</strong> with us</h3>
-							<div class="footer-socials-inner">
-								<div class="footer-socials">
-									<a class="social-icons" href="https://www.facebook.com/ExperientialEtc/"
-										target="_blank"><span><span class="icon-facebook1"></span></span></a>
-									<a class="social-icons" href="https://www.instagram.com/experientialetc/"
-										target="_blank"><span><span class="icon-instagram1"></span></span></a>
-									<a class="social-icons" href="https://www.youtube.com/c/KrypMedia"
-										target="_blank"><span><span class="icon-youtube"></span></span></a>
-									<a class="social-icons" href="https://www.linkedin.com/company/experiential-etc"
-										target="_blank"><span><span class="icon-linkedin2"></span></span></a>
-								</div>
+		<nav id="main-nav" style="opacity: 0;" class="sk_menu navbar sk_navbar navbar-expand-lg navbar-dark static-top">
+
+			<!-- Desktop Menu Logo -->
+			<a class="navbar-brand" href="#"><img id="sk__main-logo" alt="Website logo."
+					src="assets/images/logo1.png"></a>
+
+			<!-- The Menu -->
+			<ul class="navbar-nav ms-auto">
+
+				<!-- Mobile Menu Logo (only use if "close" buttons are set to false in JS) -->
+				<li data-nav-custom-content class="custom-content sk__mobile-menu-logo">
+					<a class="sk__mobile-navbar-brand" href="#"><img alt="Website mobile logo."
+							src="assets/images/logo.png"></a>
+				</li>
+
+
+
+				<!-- <li class="nav-item menu-item-has-children"> -->
+				<!-- <a class="nav-link hvr-underline-from-center" href="#">Pages</a> -->
+				<!-- <ul class="sk__submenu-ul"> -->
+				<li class="nav-item"><a class="nav-link" href="./index.html"><span class="sk__menu-icon"><span
+								class="icon-home"></span></span>Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="page-about-us.html"><span class="sk__menu-icon"><span
+								class="icon-user-circle"></span></span>About Us</a></li>
+				<li class="nav-item"><a class="nav-link" href="page-services.html"><span class="sk__menu-icon"><span
+								class="icon-th"></span></span>Services</a></li>
+				<!-- <li class="nav-item"><a class="nav-link" href="page-service-item.html"><span class="sk__menu-icon"><span class="icon-codepen1"></span></span>Service or Product</a></li> -->
+				<li class="nav-item"><a class="nav-link" href="page-portfolio.html"><span class="sk__menu-icon"><span
+								class="icon-th"></span></span>Portfolio</a></li>
+				<!-- <li class="nav-item"><a class="nav-link" href="page-portfolio-item.html"><span class="sk__menu-icon"><span class="icon-object-group"></span></span>Project - Parallax Gallery</a></li>
+						<li class="nav-item"><a class="nav-link" href="page-portfolio-item-classic-gallery.html"><span class="sk__menu-icon"><span class="icon-photo"></span></span>Project - Classic Gallery</a></li> -->
+				<li class="nav-item"><a class="nav-link" href="page-features.html"><span class="sk__menu-icon"><span
+								class="icon-table2"></span></span>Features</a></li>
+				<li class="nav-item"><a class="nav-link" href="page-news.html"><span class="sk__menu-icon"><span
+								class="icon-list-alt"></span></span>Blog</a></li>
+				<!-- <li class="nav-item"><a class="nav-link" href="page-news-item.html"><span class="sk__menu-icon"><span class="icon-file-text"></span></span>Article - Parallax Header</a></li>
+						<li class="nav-item"><a class="nav-link" href="page-news-item-classic.html"><span class="sk__menu-icon"><span class="icon-file-text-o"></span></span>Article - Classic</a></li> -->
+				<li class="nav-item"><a class="nav-link" href="page-contact-us.html"><span class="sk__menu-icon"><span
+								class="icon-envelope-o"></span></span>Contact Us</a></li>
+				<!-- <li class="nav-item"><a class="nav-link" href="page-coming-soon.html"><span class="sk__menu-icon"><span class="icon-access_time"></span></span>Coming Soon</a></li>
+						<li class="nav-item"><a class="nav-link" href="page-404.html"><span class="sk__menu-icon"><span class="icon-warning"></span></span>404 Page</a></li>
+						<li class="nav-item"><a class="nav-link" href="page-terms-and-conditions.html"><span class="sk__menu-icon"><span class="icon-library"></span></span>Terms and Conditions</a></li>
+						<li class="nav-item"><a class="nav-link" href="page-privacy-policy.html"><span class="sk__menu-icon"><span class="icon-shield"></span></span>Privacy Policy</a></li> -->
+				<!-- </ul> -->
+				</li>
+
+				<!-- <li class="nav-item menu-item-has-children">
+					<a class="nav-link hvr-underline-from-center" href="#"><span class="sk__menu-icon"><span
+								class="icon-th"></span></span>about-us</a>
+					<ul class="sk__submenu-ul">
+						<li class="nav-item menu-item-has-children">
+							<a class="nav-link" href="#"><span class="sk__menu-icon green sk__icon-popup"><span
+										class="icon-usd"></span><span class="icon-usd"></span><span
+										class="sk__icon-popup-text">$235 Added Value</span></span>Premium & Extras</a>
+							<ul class="sk__sub-submenu-ul">
+								<li class="nav-item"><a class="nav-link" href="elements-gsap.html"><span
+											class="sk__menu-icon green sk__icon-popup"><span
+												class="icon-usd"></span><span class="icon-usd"></span><span
+												class="sk__icon-popup-text">Best Premium Animation Engine on the market.
+												$199 Added Value</span></span>Greensock GSAP</a>
+								</li>
+								<li class="nav-item"><a class="nav-link" href="elements-forms.html"><span
+											class="sk__menu-icon green sk__icon-popup"><span
+												class="icon-usd"></span><span class="icon-usd"></span><span
+												class="sk__icon-popup-text">Fully Working Forms! $14 Added
+												Value</span></span>Contact Forms</a></li>
+								<li class="nav-item"><a class="nav-link" href="elements-forms.html#subscribe-form"><span
+											class="sk__menu-icon green sk__icon-popup"><span
+												class="icon-usd"></span><span class="icon-usd"></span><span
+												class="sk__icon-popup-text">Fully Working Forms! $14 Added
+												Value</span></span>Subscribe Forms</a></li>
+								<li class="nav-item"><a class="nav-link" href="elements-mockups.html"><span
+											class="sk__menu-icon green sk__icon-popup"><span
+												class="icon-usd"></span><span class="icon-usd"></span><span
+												class="sk__icon-popup-text">Premium Mockups included, $22 Added
+												Value</span></span>PSD & AI Mockups</a></li>
+							</ul>
+						</li> -->
+				<!-- <li class="nav-item menu-item-has-children">
+							<a class="nav-link" href="#"><span class="sk__menu-icon"><span
+										class="icon-codepen1"></span></span>Sliders & Hero</a>
+							<ul class="sk__sub-submenu-ul">
+								<li class="nav-item"><a class="nav-link" href="elements-hero-combo-slider.html"><span
+											class="sk__menu-icon"><span class="icon-codepen1"></span></span>Combo
+										Slider</a></li>
+								<li class="nav-item"><a class="nav-link"
+										href="elements-hero-fullscreen-video.html"><span class="sk__menu-icon"><span
+												class="icon-play-circle"></span></span>Full Screen Video</a></li>
+								<li class="nav-item"><a class="nav-link"
+										href="elements-hero-fullscreen-video-yt.html"><span class="sk__menu-icon"><span
+												class="icon-youtube-play"></span></span>Full Screen Video (YT)</a></li>
+								<li class="nav-item"><a class="nav-link" href="elements-hero-slide-show.html"><span
+											class="sk__menu-icon"><span class="icon-photo"></span></span>Hero Slide
+										Show</a></li>
+								<li class="nav-item"><a class="nav-link" href="elements-hero-mega-text-video.html"><span
+											class="sk__menu-icon"><span class="icon-cc-jcb"></span></span>Mega Text
+										(Video)</a></li>
+								<li class="nav-item"><a class="nav-link" href="elements-hero-mega-text-image.html"><span
+											class="sk__menu-icon"><span class="icon-cc-jcb"></span></span>Mega Text
+										(Image)</a></li>
+								<li class="nav-item"><a class="nav-link" href="elements-hero-parallax-strips.html"><span
+											class="sk__menu-icon"><span class="icon-view_week"></span></span>Parallax
+										Strips Hero</a></li>
+								<li class="nav-item"><a class="nav-link"
+										href="elements-hero-animated-headline.html"><span class="sk__menu-icon"><span
+												class="icon-play_arrow"></span></span>Animated Hero Headline</a></li>
+								<li class="nav-item"><a class="nav-link" href="elements-hero-image.html"><span
+											class="sk__menu-icon"><span class="icon-photo"></span></span>Hero Image</a>
+								</li>
+							</ul> -->
+				<!-- </li>
+						<li class="nav-item menu-item-has-children">
+							<a class="nav-link" href="elements-content.html"><span class="sk__menu-icon"><span
+										class="icon-th"></span></span>Content Sections</a>
+							<ul class="sk__sub-submenu-ul">
+								<li><a class="nav-link" href="elements-content.html"><span class="sk__menu-icon"><span
+												class="icon-th"></span></span>Content Sections</a></li>
+								<li><a class="nav-link" href="elements-content.html#animated-counters-section"><span
+											class="sk__menu-icon"><span class="icon-spinner1"></span></span>Animated
+										Counters</a></li>
+								<li><a class="nav-link" href="elements-content.html#cta-section"><span
+											class="sk__menu-icon"><span class="icon-commenting-o"></span></span>Call To
+										Action (CTA)</a></li>
+								<li><a class="nav-link" href="elements-content.html#contact-section"><span
+											class="sk__menu-icon"><span
+												class="icon-envelope-open-o"></span></span>Contact Us</a></li>
+								<li><a class="nav-link" href="elements-content.html#features-section"><span
+											class="sk__menu-icon"><span class="icon-table2"></span></span>Features</a>
+								</li>
+								<li><a class="nav-link" href="elements-content.html#icon-boxes-section"><span
+											class="sk__menu-icon"><span class="icon-th"></span></span>Icon Boxes</a>
+								</li>
+								<li><a class="nav-link" href="elements-content.html#image-boxes-section"><span
+											class="sk__menu-icon"><span class="icon-th"></span></span>Image Boxes</a>
+								</li>
+								<li><a class="nav-link" href="elements-content.html#partners-section"><span
+											class="sk__menu-icon"><span
+												class="icon-slideshare"></span></span>Partners</a></li>
+								<li><a class="nav-link" href="elements-content.html#portfolio-section"><span
+											class="sk__menu-icon"><span class="icon-th"></span></span>Portfolio</a></li>
+								<li><a class="nav-link" href="elements-content.html#skills-section"><span
+											class="sk__menu-icon"><span class="icon-server"></span></span>Skills</a>
+								</li>
+								<li><a class="nav-link" href="elements-content.html#testimonials-section"><span
+											class="sk__menu-icon"><span
+												class="icon-comments"></span></span>Testimonials</a></li>
+							</ul>
+						</li>
+						<li class="nav-item menu-item-has-children">
+							<a class="nav-link" href="elements-parallax-content.html"><span class="sk__menu-icon"><span
+										class="icon-codepen1"></span></span>Parallax Sections</a>
+							<ul class="sk__sub-submenu-ul">
+								<li><a class="nav-link" href="elements-parallax-content.html"><span
+											class="sk__menu-icon"><span class="icon-codepen1"></span></span>Parallax
+										Sections</a></li>
+								<li><a class="nav-link" href="elements-parallax-content.html#about-us-section"><span
+											class="sk__menu-icon"><span class="icon-id-card-o"></span></span>About Us
+										(Parallax)</a></li>
+								<li><a class="nav-link"
+										href="elements-parallax-content.html#animated-counters-section"><span
+											class="sk__menu-icon"><span class="icon-spinner1"></span></span>Anim.
+										Counters (Parallax)</a></li>
+								<li><a class="nav-link" href="elements-parallax-content.html#cta-parallax-section"><span
+											class="sk__menu-icon"><span class="icon-commenting-o"></span></span>CTA
+										Section (Parallax)</a></li>
+								<li><a class="nav-link"
+										href="elements-parallax-content.html#contact-parallax-section"><span
+											class="sk__menu-icon"><span class="icon-envelope-o"></span></span>Contact Us
+										(Parallax)</a></li>
+								<li><a class="nav-link"
+										href="elements-parallax-content.html#featured-project-section"><span
+											class="sk__menu-icon"><span class="icon-photo"></span></span>Featured
+										Project</a></li>
+								<li><a class="nav-link"
+										href="elements-parallax-content.html#features-parallax-section"><span
+											class="sk__menu-icon"><span
+												class="icon-object-ungroup"></span></span>Features (Parallax)</a></li>
+								<li><a class="nav-link"
+										href="elements-parallax-content.html#icon-boxes-parallax-section"><span
+											class="sk__menu-icon"><span class="icon-th"></span></span>Icon Boxes
+										(Parallax)</a></li>
+								<li><a class="nav-link"
+										href="elements-parallax-content.html#image-boxes-parallax-section"><span
+											class="sk__menu-icon"><span class="icon-th"></span></span>Image Boxes
+										(Parallax)</a></li>
+								<li><a class="nav-link" href="elements-parallax-content.html#laptop-section"><span
+											class="sk__menu-icon"><span class="icon-laptop1"></span></span>Laptop
+										Section</a></li>
+								<li><a class="nav-link"
+										href="elements-parallax-content.html#parallax-text-section"><span
+											class="sk__menu-icon"><span class="icon-clone"></span></span>Parallax
+										Text</a></li>
+								<li><a class="nav-link"
+										href="elements-parallax-content.html#parallax-images-section"><span
+											class="sk__menu-icon"><span
+												class="icon-object-ungroup"></span></span>Parallax Images</a></li>
+								<li><a class="nav-link"
+										href="elements-parallax-content.html#parallax-videos-section"><span
+											class="sk__menu-icon"><span
+												class="icon-ondemand_video"></span></span>Parallax Video</a></li>
+								<li><a class="nav-link"
+										href="elements-parallax-content.html#partners-parallax-section"><span
+											class="sk__menu-icon"><span
+												class="icon-slideshare"></span></span>Partners</a></li>
+								<li><a class="nav-link" href="elements-parallax-content.html#rings-section"><span
+											class="sk__menu-icon"><span class="icon-bullseye"></span></span>Rings
+										Section</a></li>
+								<li><a class="nav-link"
+										href="elements-parallax-content.html#skills-parallax-section"><span
+											class="sk__menu-icon"><span class="icon-server"></span></span>Skills
+										(Parallax)</a></li>
+								<li><a class="nav-link"
+										href="elements-parallax-content.html#testimonials-parallax-section"><span
+											class="sk__menu-icon"><span class="icon-server"></span></span>Testimonials
+										(Parallax)</a></li>
+							</ul>
+						</li>
+						<li class="nav-item menu-item-has-children">
+							<a class="nav-link" href="#"><span class="sk__menu-icon"><span
+										class="icon-photo"></span></span>Galleries</a>
+							<ul class="sk__sub-submenu-ul">
+								<li><a class="nav-link" href="elements-galleries.html#classic-gallery"><span
+											class="sk__menu-icon"><span class="icon-photo"></span></span>Classic
+										Gallery</a></li>
+								<li><a class="nav-link" href="elements-galleries.html#gallery-section"><span
+											class="sk__menu-icon"><span class="icon-newspaper-o"></span></span>Gallery
+										Section</a></li>
+								<li><a class="nav-link" href="elements-galleries.html#parallax-gallery"><span
+											class="sk__menu-icon"><span class="icon-square-o"></span></span>Parallax
+										Gallery</a></li>
+							</ul> -->
+				<!-- </li>
+						<li class="nav-item menu-item-has-children">
+							<a class="nav-link" href="#"><span class="sk__menu-icon"><span
+										class="icon-gears"></span></span>Footers</a>
+							<ul class="sk__sub-submenu-ul">
+								<li class="nav-item"><a class="nav-link" href="elements-footer-simple.html"><span
+											class="sk__menu-icon"><span class="icon-square"></span></span>Footer -
+										Simple</a></li>
+								<li class="nav-item"><a class="nav-link" href="elements-footer-full.html"><span
+											class="sk__menu-icon"><span class="icon-table2"></span></span>Footer -
+										Full</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="elements-typography.html"><span class="sk__menu-icon"><span
+										class="icon-font1"></span></span>Typography</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="elements-icon-fonts.html"><span class="sk__menu-icon"><span
+										class="icon-th"></span></span>Icon Fonts</a>
+						</li>
+					</ul>
+				</li> -->
+
+				<!-- <li class="nav-item">
+					<a class="nav-link hvr-underline-from-center" href="theme-preview.html#demo-select"><span
+							class="sk__menu-icon"><span class="icon-laptop1"></span></span>Demos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="https://1.envato.market/qn6L9N"><span class="sk__menu-icon"><span
+								class="icon-shopping-cart"></span></span>Get DarkStar Now</a>
+				</li> -->
+				<!-- Regular Menu Items End -->
+
+				<!-- Mobile Menu Social Icons -->
+				<li data-nav-custom-content class="custom-content sk__menu-socials">
+					<section class="footer-socials-section">
+						<h3><strong>Connect</strong> with us</h3>
+						<div class="footer-socials-inner">
+							<div class="footer-socials">
+								<a class="social-icons" href="https://www.instagram.com/experientialetc/"
+									target="_blank"><span><span class="icon-instagram1"></span></span></a>
+								<a class="social-icons" href="https://www.youtube.com/c/KrypMedia"
+									target="_blank"><span><span class="icon-youtube"></span></span></a>
+								<a class="social-icons" href="https://www.linkedin.com/company/experiential-etc"
+									target="_blank"><span><span class="icon-linkedin2"></span></span></a>
+								<a class="social-icons" href="https://www.facebook.com/ExperientialEtc/"
+									target="_blank"><span><span class="icon-facebook"></span></span></a>
 							</div>
-						</section>
-					</li>
-	
-				</ul>
-			</nav>
+						</div>
+					</section>
+				</li>
+
+			</ul>
+		</nav>
 		<!-- /.sk__menu -->
 
 
@@ -546,7 +790,7 @@
 
 				<!-- About Us Section
 				================================================== -->
-				<section id="about-us" class="sk__about-us-section sk__py-xl">
+				<section style="padding: 0px;" id="about-us" class="sk__about-us-section sk__py-xl">
 					<div class="container sk__supercontainer">
 						<div class="row">
 							<div class="col-12 col-lg-6 sk__rectangles-left about-left text-center text-sm-start">
@@ -623,8 +867,6 @@
 					</div>
 
 
-					<!-- Partners Section
-					================================================== -->
 					<div class="sk__partners-section">
 						<div class="container sk__supercontainer">
 							<div class="row">
@@ -634,90 +876,241 @@
 										Clients</h4>
 									<span class="fat-divider dark-shade-4-bg"></span>
 								</div>
-							</div>
-							<section class="sk__hero-section">
-								<!-- Carousel -->
-								<div id="sk__hero-carousel-slider" class="carousel slide dark-shade-1-bg">
+							</div> 
+					<section class="sk__gallery-basic">
 
-
-
-									<!-- Slides -->
-									<div class="carousel-inner">
-
-										<!-- Slide 1 -->
-										<div
-											class="carousel-item zooming active hero-slide-1 sk__hero-slider-item sk__image-back-cover">
-
-											<section class="sk__parallax-background-section sk__hero-item-theme-styles">
-
-												<!-- Parallax background -->
-												<div
-													class="sk__parallax-background-element sk__absolute sk__image-back-cover">
-												</div>
-
-												<div class="flex-helper-div"></div>
-												<!-- // cards slide// -->
-												<div class="row sk__partners m-0 d-flex justify-content-center">
-													<img src="./assets/images/Final OP-01.png" alt="">
-												</div>
-											</section>
+						<!-- Carousel -->
+						<div id="sk__service-1-gallery-basic" class="carousel slide">
+					
+							<!-- Dots -->
+							<!-- <div class="carousel-indicators">
+								<button type="button" data-bs-target="#sk__service-1-gallery-basic" data-bs-slide-to="0" class="active"></button>
+								<button type="button" data-bs-target="#sk__service-1-gallery-basic" data-bs-slide-to="1"></button>
+								<button type="button" data-bs-target="#sk__service-1-gallery-basic" data-bs-slide-to="2"></button>
+								<button type="button" data-bs-target="#sk__service-1-gallery-basic" data-bs-slide-to="3"></button>
+								<button type="button" data-bs-target="#sk__service-1-gallery-basic" data-bs-slide-to="4"></button>
+							</div> -->
+					
+							<!-- Slides -->
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="assets/images/Final OP-01.png" alt="service-01-gallery-image-01">
+									<div class="carousel-caption">
+										<div class="carousel-caption-description">
+											
 										</div>
-										<!-- /.hero-slide-1 -->
-
-
-										<!-- Slide 2 -->
-										<div
-											class="carousel-item zooming hero-slide-2 sk__hero-slider-item sk__image-back-cover">
-
-											<section class="sk__parallax-background-section sk__hero-item-theme-styles">
-
-												<!-- Parallax background -->
-												<div
-													class="sk__parallax-background-element sk__absolute sk__image-back-cover">
-												</div>
-
-												<div class="flex-helper-div"></div>
-												<!-- // cards slide// -->
-												<div class="row sk__partners m-0 d-flex justify-content-center">
-													<img src="./assets/images/Final OP-02.png" alt="">
-												</div>
-											</section>
-										</div>
-										<!-- /.hero-slide-2 -->
-
-
-										<!-- Slide 3 -->
-										<div
-											class="carousel-item zooming hero-slide-3 sk__hero-slider-item sk__image-back-cover">
-											<section class="sk__parallax-background-section sk__hero-item-theme-styles">
-
-												<!-- Parallax background -->
-												<div
-													class="sk__parallax-background-element sk__absolute sk__image-back-cover">
-												</div>
-
-												<div class="flex-helper-div"></div>
-												<!-- // cards slide// -->
-												<div class="row sk__partners m-0 d-flex justify-content-center">
-													<img src="./assets/images/Group 7451.png" alt="">
-												</div>
-											</section>
-										</div>
-										<!-- /.hero-slide-3 -->
 									</div>
-
-
-
 								</div>
-								<!-- /#sk__hero-carousel-slider -->
-							</section>
+								<div class="carousel-item">
+									<img style="width:90%;margin-left:50px;" src="assets/images/Final OP-02.png" alt="service-01-gallery-image-02">
+									<div class="carousel-caption">
+										<div class="carousel-caption-description">
+											
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img style="width:80%;margin-left:90px;"src="assets/images/Group 7451.png" alt="service-01-gallery-image-03">
+									<div class="carousel-caption">
+										<div class="carousel-caption-description">
+											
+										</div>
+									</div>
+								</div>
+								
+							</div>
+					
+							<!-- Arrows -->
+							<button style="margin-right:40px;Font-size:80px;"class="carousel-control-prev" data-bs-target="#sk__service-1-gallery-basic" data-bs-slide="prev">
+								<span style="margin-right:80px;height:100px;"class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span style="margin-left:30px;"class="visually-hidden">Previous</span>
+							</button>
+							<button style="margin-left:30px;"class="carousel-control-next" data-bs-target="#sk__service-1-gallery-basic" data-bs-slide="next">
+								<span style="margin-left:80px;"class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span style="margin-left:30px;"class="visually-hidden">Next</span>
+							</button>
+					
+						</div>
+						<!-- /#sk__service-1-gallery-basic -->
+
+					</section>
+					</div>
+					</div>
+					
+
+
+					
+										
+									
+
+
+
+				
+				<span class="fat-divider dark-shade-4-bg"></span>
+
+
+
+				<!-- Portfolio Section
+				================================================== -->
+				<!-- <section class="sk__portfolio-section sk__py-l dark-shade-2-bg sk__solid-menu-bar">
+					<div class="container-fluid">
+						<div class="row text-center">
+							<div class="col sk__heading-spacer-l">
+								<h1 class="h1-small trigger-portfolio-thumbs-entrance">Portfolio</h1>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col sk__portfolio-thumbs px-sm-3 px-md-5">
+								<div class="sk__portfolio-wrapper text-center">
+									<div class="sk__portfolio-item">
+										<a href="page-portfolio-item.html" class="sk__portfolio-thumblink">
+											<div class="sk__pt-link-icon">
+												<div class="sk__pt-link-icon-ovr-1"></div>
+												<div class="sk__pt-link-icon-ovr-2"></div>
+											</div>
+											<div class="sk__portfolio-thumblink-image sk__image-back-cover" style="background-image: url('assets/images/portfolio-thumbs-01.webp');"></div>
+											<div class="portfolio-thumb-info">
+												<h6>Photography</h6>
+												<h4 class="h4-small">Seventh Culture</h4>
+												<p>View Project</p>
+											</div>
+										</a>
+									</div>
+									<div class="sk__portfolio-item">
+										<a href="page-portfolio-item.html" class="sk__portfolio-thumblink">
+											<div class="sk__pt-link-icon">
+												<div class="sk__pt-link-icon-ovr-1"></div>
+												<div class="sk__pt-link-icon-ovr-2"></div>
+											</div>
+											<div class="sk__portfolio-thumblink-image sk__image-back-cover" style="background-image: url('assets/images/portfolio-thumbs-02.webp');"></div>
+											<div class="portfolio-thumb-info">
+												<h6>Photography</h6>
+												<h4 class="h4-small">Charcoal Fashion</h4>
+												<p>View Project</p>
+											</div>
+										</a>
+									</div>
+									<div class="sk__portfolio-item">
+										<a href="page-portfolio-item.html" class="sk__portfolio-thumblink">
+											<div class="sk__pt-link-icon">
+												<div class="sk__pt-link-icon-ovr-1"></div>
+												<div class="sk__pt-link-icon-ovr-2"></div>
+											</div>
+											<div class="sk__portfolio-thumblink-image sk__image-back-cover" style="background-image: url('assets/images/portfolio-thumbs-03.webp');"></div>
+											<div class="portfolio-thumb-info">
+												<h6>Photography</h6>
+												<h4 class="h4-small">Spirited Culture</h4>
+												<p>View Project</p>
+											</div>
+										</a>
+									</div>
+									<div class="sk__portfolio-item">
+										<a href="page-portfolio-item.html" class="sk__portfolio-thumblink">
+											<div class="sk__pt-link-icon">
+												<div class="sk__pt-link-icon-ovr-1"></div>
+												<div class="sk__pt-link-icon-ovr-2"></div>
+											</div>
+											<div class="sk__portfolio-thumblink-image sk__image-back-cover" style="background-image: url('assets/images/portfolio-thumbs-04.webp');"></div>
+											<div class="portfolio-thumb-info">
+												<h6>Photography</h6>
+												<h4 class="h4-small">Blackened Technics</h4>
+												<p>View Project</p>
+											</div>
+										</a>
+									</div>
+									<div class="sk__portfolio-item">
+										<a href="page-portfolio-item.html" class="sk__portfolio-thumblink">
+											<div class="sk__pt-link-icon">
+												<div class="sk__pt-link-icon-ovr-1"></div>
+												<div class="sk__pt-link-icon-ovr-2"></div>
+											</div>
+											<div class="sk__portfolio-thumblink-image sk__image-back-cover" style="background-image: url('assets/images/portfolio-thumbs-05.webp');"></div>
+											<div class="portfolio-thumb-info">
+												<h6>Photography</h6>
+												<h4 class="h4-small">Project Vulcan</h4>
+												<p>View Project</p>
+											</div>
+										</a>
+									</div>
+									<div class="sk__portfolio-item">
+										<a href="page-portfolio-item.html" class="sk__portfolio-thumblink">
+											<div class="sk__pt-link-icon">
+												<div class="sk__pt-link-icon-ovr-1"></div>
+												<div class="sk__pt-link-icon-ovr-2"></div>
+											</div>
+											<div class="sk__portfolio-thumblink-image sk__image-back-cover" style="background-image: url('assets/images/portfolio-thumbs-06.webp');"></div>
+											<div class="portfolio-thumb-info">
+												<h6>Photography</h6>
+												<h4 class="h4-small">Creative Culture</h4>
+												<p>View Project</p>
+											</div>
+										</a>
+									</div>
+									<div class="sk__portfolio-item">
+										<a href="page-portfolio-item.html" class="sk__portfolio-thumblink">
+											<div class="sk__pt-link-icon">
+												<div class="sk__pt-link-icon-ovr-1"></div>
+												<div class="sk__pt-link-icon-ovr-2"></div>
+											</div>
+											<div class="sk__portfolio-thumblink-image sk__image-back-cover" style="background-image: url('assets/images/portfolio-thumbs-07.webp');"></div>
+											<div class="portfolio-thumb-info">
+												<h6>Photography</h6>
+												<h4 class="h4-small">Charcoal Fashion</h4>
+												<p>View Project</p>
+											</div>
+										</a>
+									</div>
+									<div class="sk__portfolio-item">
+										<a href="page-portfolio-item.html" class="sk__portfolio-thumblink">
+											<div class="sk__pt-link-icon">
+												<div class="sk__pt-link-icon-ovr-1"></div>
+												<div class="sk__pt-link-icon-ovr-2"></div>
+											</div>
+											<div class="sk__portfolio-thumblink-image sk__image-back-cover" style="background-image: url('assets/images/portfolio-thumbs-08.webp');"></div>
+											<div class="portfolio-thumb-info">
+												<h6>Photography</h6>
+												<h4 class="h4-small">Fashion & Webdesign</h4>
+												<p>View Project</p>
+											</div>
+										</a>
+									</div>
+									<div class="sk__portfolio-item">
+										<a href="page-portfolio-item.html" class="sk__portfolio-thumblink">
+											<div class="sk__pt-link-icon">
+												<div class="sk__pt-link-icon-ovr-1"></div>
+												<div class="sk__pt-link-icon-ovr-2"></div>
+											</div>
+											<div class="sk__portfolio-thumblink-image sk__image-back-cover" style="background-image: url('assets/images/portfolio-thumbs-09.webp');"></div>
+											<div class="portfolio-thumb-info">
+												<h6>3D Modeling</h6>
+												<h4 class="h4-small">Primer Photography</h4>
+												<p>View Project</p>
+											</div>
+										</a>
+									</div>
+									<div class="sk__portfolio-item">
+										<a href="page-portfolio-item.html" class="sk__portfolio-thumblink">
+											<div class="sk__pt-link-icon">
+												<div class="sk__pt-link-icon-ovr-1"></div>
+												<div class="sk__pt-link-icon-ovr-2"></div>
+											</div>
+											<div class="sk__portfolio-thumblink-image sk__image-back-cover" style="background-image: url('assets/images/portfolio-thumbs-10.webp');"></div>
+											<div class="portfolio-thumb-info">
+												<h6>Graphic Design</h6>
+												<h4 class="h4-small">Vulture Culture</h4>
+												<p>Creative Design</p>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<!-- /.sk__partners-section -->
+				</section> -->
+				<!-- /.sk__portfolio-section -->
 
-				</section>
 
-				<span class="fat-divider dark-shade-4-bg"></span>
+
 				<!-- Featured Project Section
 				================================================== -->
 				<section class="sk__featured-project-section sk__parallax-background-section dark-shade-2-bg sk__flex">
@@ -774,26 +1167,21 @@
 				<!-- /.sk__featured-project-section -->
 
 				<div class="dark-shade-2-bg featured-project-padder"></div>
-			</div>
-			<!-- <div class="row">
-							<div class="col sk__features-subtext">
-								<div class="features-subtext-deco"></div>
-								<p class="p-xs text-center text-sm-end features-subtext-p">Salvia vape blue bottle bespoke wolf celiac quinoa cloud bread letterpress hammock photo booth. Palo santo vexillologist venmo shaman pitchfork tote bag.</p>
-							</div>
-						</div> -->
-		</div>
-		</section>
+
+
+
+				
 		<!-- /.sk__features-section -->
 
 		<!-- <hr> -->
 		<span class="fat-divider dark-shade-4-bg"></span>
 		<section id="services"
-			class="sk__services-section sk__parallax-background-section sk__py-l dark-shade-5-border sk__solid-menu-bar">
+			class="sk__services-section sk__parallax-background-section sk__py dark-shade-5-border sk__solid-menu-bar">
 			<div class="sk__parallax-background-element sk__absolute sk__image-back-cover sk__services-background">
 			</div>
 			<div class="container pt-4">
 				<div class="row text-center">
-					<!-- <img style="height:auto;width:100px;top:100px;left:250px;position:relative;"src="assets/images/logo1.png"> -->
+					
 					<div class="col-12 col-md-10 offset-md-1 sk__heading-spacer-l sk__reveal-header-text">
 						<div class="cover-text-wrapper">
 							<h1 class="super-heading sk__clipped-text sk__gradient-back-v1 animated-element"> Our
@@ -950,35 +1338,7 @@
 							</p>
 						</div>
 					</div>
-					<!-- <div class="col-12 col-sm-6 col-lg-4">
-								<div class="sk__iconbox">
-									<a class="sk__iconbox-icon-link" href="page-services-experientialmarketting.html">
-										<span class="sk__flex-center sk__iconbox-icon"><span class="icon-pen2 sk__gradient-fancy-text"></span></span>
-										<span class="sk__iconbox-icon-dash"></span>
-									</a>
-									<a class="sk__iconbox-text-link gradient-links-bright" href="page-services-experientialmarketting.html">
-										<h5>Experiential Marketing</h5>
-									</a>
-									<p>We provide experiential marketing, typically referred to as engagement
-										marketing, where we emphasise the consumer's experience with the
-										brand through interactive games and the employment of
-										eye-catching technologies.</p>
-								</div>
-							</div> -->
-					<!-- 							<div class="col-12 col-sm-6 col-lg-4">
-								<div class="sk__iconbox">
-									<a class="sk__iconbox-icon-link" href="page-services-btl.html">
-										<span class="sk__flex-center sk__iconbox-icon"><span class="icon-pen2 sk__gradient-fancy-text"></span></span>
-										<span class="sk__iconbox-icon-dash"></span>
-									</a>
-									<a class="sk__iconbox-text-link gradient-links-bright" href="page-services-btl.html">
-										<h5>BTLActivation</h5>
-									</a>
-									<p>Since we offer on-ground, engaging, and interactive services,
-										we also provide BTL Activation. It is offered to ensure the
-										organisation, preparation, and performance of an event.</p>
-								</div>
-							</div> -->
+					
 					<div class="col-12 col-sm-6 col-lg-4">
 						<div class="sk__iconbox">
 							<a class="sk__iconbox-icon-link" href="page-services-videoproduction.html">
@@ -1006,12 +1366,10 @@
 							</a>
 							<a class="sk__iconbox-text-link gradient-links-bright"
 								href="page-services-videoproduction.html">
-								<h5>Anamorphic</h5>
+								<h5>Anamorphic Displays</h5>
 							</a>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique exercitationem aliquam
-								dolorem inventore a, ipsam
-								magni error voluptatibus officiis officia autem architecto consequatur aliquid dolor vel
-								libero placeat nihil eius!.</p>
+							<p> Forced perspective content that creates unbelievably dynamic
+								 stories that became viral organically. Curved Led simply adds to the magic!</p>
 						</div>
 					</div>
 					<div class="col-12 col-sm-6 col-lg-4">
@@ -1026,10 +1384,8 @@
 								href="page-services-videoproduction.html">
 								<h5>Holo-lazr</h5>
 							</a>
-							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa odio consectetur, fugiat
-								ipsum nostrum architecto. Perspiciatis aliquid temporibus,
-								suscipit recusandae officia nihil dolorum facere dignissimos optio animi iusto. Dicta,
-								numquam?.</p>
+							<p>A visual laser show like never before. Pocket size laser cube that delivers
+								 a customized delight,larger than life.</p>
 						</div>
 					</div>
 					<div class="col-12 col-sm-6 col-lg-4">
@@ -1044,10 +1400,7 @@
 								href="page-services-videoproduction.html">
 								<h5>Holo-table</h5>
 							</a>
-							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique saepe voluptate
-								veniam sunt quos consectetur perspiciatis
-								culpa ipsum quam fuga voluptas suscipit, minima eos tenetur nulla delectus! Ex, iure
-								aliquid.</p>
+							<p> Mixed reality has a new meaning. Especially when it's an engaging game on a table.Engage and  Excite.</p>
 						</div>
 					</div>
 					<div class="col-12 col-sm-6 col-lg-4">
@@ -1061,12 +1414,10 @@
 							</a>
 							<a class="sk__iconbox-text-link gradient-links-bright"
 								href="page-services-videoproduction.html">
-								<h5>Sensors games</h5>
+								<h5>Sensor Games</h5>
 							</a>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, facere earum saepe
-								repellendus ab deleniti aut aspernatur
-								reprehenderit enim vero perspiciatis labore debitis veniam animi maiores? Ipsam mollitia
-								maiores laboriosam.</p>
+							<p>Load gauge or Motion sensors.We've got it all.Once integrated with
+								 thematic fabrication and the results are fantastic.</p>
 						</div>
 					</div>
 					<div class="col-12 col-sm-6 col-lg-4">
@@ -1082,10 +1433,7 @@
 								href="page-services-videoproduction.html">
 								<h5>Sound showers</h5>
 							</a>
-							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora officia, dolore
-								accusamus dicta, natus eligendi corporis
-								a perspiciatis blanditiis ab dolorum enim excepturi assumenda. Architecto odio
-								consectetur non aperiam ratione!</p>
+							<p>  An audio kiosk meant to give an exclusive experience by creating a private audio-sensory environment. </p>
 						</div>
 					</div>
 					<div class="col-12 col-sm-6 col-lg-4">
@@ -1099,12 +1447,27 @@
 							</a>
 							<a class="sk__iconbox-text-link gradient-links-bright"
 								href="page-services-videoproduction.html">
-								<h5>3D pillars</h5>
+								<h5>Innovation centers</h5>
 							</a>
-							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, eum consequatur alias
-								suscipit
-								explicabo rerum nam vitae sint culpa neque tempore vero, minima totam, dicta obcaecati
-								et odit consequuntur amet.</p>
+							<p>Smart hardware and smarter applications. The combination creates experience centers that give a
+								 360 immersive and engaging experience to the visitors. </p>
+						</div>
+					</div>
+					
+					<div class="col-12 col-sm-6 col-lg-4">
+						<div class="sk__iconbox">
+							<a class="sk__iconbox-icon-link" href="page-services-videoproduction.html">
+								<!-- <span class="sk__flex-center sk__iconbox-icon"><span
+										class="icon-pen2 sk__gradient-fancy-text"></span></span> -->
+								<img style="height:70%;margin-top:20px;" src="./assets/images/Video Production.png"
+									alt="">
+								<span class="sk__iconbox-icon-dash"></span>
+							</a>
+							<a class="sk__iconbox-text-link gradient-links-bright"
+								href="page-services-videoproduction.html">
+								<h5>Kinetic Sculptures</h5>
+							</a>
+							<p> Moving architectural installations which use kinetics and laws of physics to create a mesmerizing artform.</p>
 						</div>
 					</div>
 					<div class="col-12 col-sm-6 col-lg-4">
@@ -1118,91 +1481,11 @@
 							</a>
 							<a class="sk__iconbox-text-link gradient-links-bright"
 								href="page-services-videoproduction.html">
-								<h5>Interactive Projection</h5>
+								<h5>Smart Kiosks</h5>
 							</a>
-							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias excepturi ex rem,
-								unde a illo sunt sequi
-								natus fugiat deleniti! Doloremque dignissimos molestias recusandae delectus, minima quis
-								voluptate laudantium neque.</p>
+							<p>Kinect based vending machines , AI-integrated games, speech enabled displays. As smart as a kiosk can get.</p>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-lg-4">
-						<div class="sk__iconbox">
-							<a class="sk__iconbox-icon-link" href="page-services-videoproduction.html">
-								<!-- <span class="sk__flex-center sk__iconbox-icon"><span
-										class="icon-pen2 sk__gradient-fancy-text"></span></span> -->
-								<img style="height:70%;margin-top:20px;" src="./assets/images/Video Production.png"
-									alt="">
-								<span class="sk__iconbox-icon-dash"></span>
-							</a>
-							<a class="sk__iconbox-text-link gradient-links-bright"
-								href="page-services-videoproduction.html">
-								<h5>Photo booth</h5>
-							</a>
-							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis cum dolorem iusto,
-								atque saepe in
-								laborum adipisci illo ullam amet, voluptatem tenetur fugit quas molestias modi sed
-								expedita necessitatibus autem.</p>
-						</div>
-					</div>
-					<div class="col-12 col-sm-6 col-lg-4">
-						<div class="sk__iconbox">
-							<a class="sk__iconbox-icon-link" href="page-services-videoproduction.html">
-								<!-- <span class="sk__flex-center sk__iconbox-icon"><span
-										class="icon-pen2 sk__gradient-fancy-text"></span></span> -->
-								<img style="height:70%;margin-top:20px;" src="./assets/images/Video Production.png"
-									alt="">
-								<span class="sk__iconbox-icon-dash"></span>
-							</a>
-							<a class="sk__iconbox-text-link gradient-links-bright"
-								href="page-services-videoproduction.html">
-								<h5>Kinnect</h5>
-							</a>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad non esse perferendis culpa
-								veritatis incidunt minus architecto atque
-								perspiciatis quis, dolore, quae praesentium inventore exercitationem maxime dignissimos
-								enim, id fugit.</p>
-						</div>
-					</div>
-					<div class="col-12 col-sm-6 col-lg-4">
-						<div class="sk__iconbox">
-							<a class="sk__iconbox-icon-link" href="page-services-videoproduction.html">
-								<!-- <span class="sk__flex-center sk__iconbox-icon"><span
-										class="icon-pen2 sk__gradient-fancy-text"></span></span> -->
-								<img style="height:70%;margin-top:20px;" src="./assets/images/Video Production.png"
-									alt="">
-								<span class="sk__iconbox-icon-dash"></span>
-							</a>
-							<a class="sk__iconbox-text-link gradient-links-bright"
-								href="page-services-videoproduction.html">
-								<h5>kinetic</h5>
-							</a>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quod optio cum vitae ad.
-								Obcaecati magnam, tempora
-								soluta voluptatibus deserunt dolores iusto, distinctio assumenda sit nostrum laudantium
-								eaque natus amet.</p>
-						</div>
-					</div>
-					<div class="col-12 col-sm-6 col-lg-4">
-						<div class="sk__iconbox">
-							<a class="sk__iconbox-icon-link" href="page-services-videoproduction.html">
-								<!-- <span class="sk__flex-center sk__iconbox-icon"><span
-										class="icon-pen2 sk__gradient-fancy-text"></span></span> -->
-								<img style="height:70%;margin-top:20px;" src="./assets/images/Video Production.png"
-									alt="">
-								<span class="sk__iconbox-icon-dash"></span>
-							</a>
-							<a class="sk__iconbox-text-link gradient-links-bright"
-								href="page-services-videoproduction.html">
-								<h5>Smart Kiosk</h5>
-							</a>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quod optio cum vitae ad.
-								Obcaecati magnam, tempora
-								soluta voluptatibus deserunt dolores iusto, distinctio assumenda sit nostrum laudantium
-								eaque natus amet.</p>
-						</div>
-					</div>
-
 
 
 
@@ -1211,7 +1494,7 @@
 					<span class="fat-divider dark-shade-4-bg"></span>
 					<div class="col-12 col-sm-6 col-lg-4">
 						<div class="sk__iconbox">
-							<a class="sk__iconbox-icon-link" href="./Arfilter.html">
+							<a class="sk__iconbox-icon-link" href="page-services-instagramarfilter.html">
 								<!-- <span class="sk__flex-center sk__iconbox-icon"><span
 										class="icon-diamond1 sk__gradient-fancy-text"></span></span> -->
 								<img style="height:70%;margin-top:30px;" src="./assets/images/Instagram Ar filter.png"
@@ -1219,7 +1502,7 @@
 								<span class="sk__iconbox-icon-dash"></span>
 							</a>
 							<a class="sk__iconbox-text-link gradient-links-bright"
-								href="./Arfilter.html">
+								href="page-services-instagramarfilter.html">
 								<h5>AR Filters</h5>
 							</a>
 							<p>Face filters work by detecting a face and superimposing virtual elements onto that face
@@ -1300,13 +1583,14 @@
 					</div>
 					<div class="col-12 col-sm-6 col-lg-4">
 						<div class="sk__iconbox">
-							<a class="sk__iconbox-icon-link" href="./page-service-smartapps.html">
+							<a class="sk__iconbox-icon-link" href="page-service-digitalfanengagement.html">
 								<!-- <span class="sk__flex-center sk__iconbox-icon"><span
 										class="icon-bulb sk__gradient-fancy-text"></span></span> -->
 								<img style="height:70%;margin-top:25px;" src="./assets/images/Smarts App.png" alt="">
 								<span class="sk__iconbox-icon-dash"></span>
 							</a>
-							<a class="sk__iconbox-text-link gradient-links-bright" href="./page-service-smartapps.html">
+							<a class="sk__iconbox-text-link gradient-links-bright"
+								href="page-service-digitalfanengagement.html">
 								<h5>Smart Apps</h5>
 							</a>
 							<p>Smart apps are applications that incorporate data-driven, actionable insights into the
@@ -1500,7 +1784,7 @@
 								</div>
 								<div class="col-12 col-lg-6 d-flex align-items-center sk__testimonial-container">
 									<div class="sk__testimonial-img sk__image-back-cover sk__testimonial-img-3"></div>
-									<div class="sk__testimonial-txt">
+									<div class="sk__testimonial-txt" style="margin-top: 60px;">
 										<h5>Sonal Mahendru</h5>
 										<strong>
 											<p>Chief Technology Officer</p>
@@ -1618,22 +1902,22 @@
 						<div class="sk__contact-right text-center text-sm-start">
 
 							<!-- Preview Only Static Form -->
-							<form class="sk_form sk_contact-form" id="form" action="/">
+							<form class="sk__form sk__contact-form" id="form" action="/">
 								<div class="form-group">
 									<input type="text" name="the_name" placeholder="Name*" tabindex="1" required
 										onkeyup="lettersOnly(this)" id="username">
 								</div>
 								<div class="error"></div>
 								<div class="form-group">
-									<input type="text" name="email" placeholder="Email*" tabindex="2" id="email" required
+									<input type="text" name="email" placeholder="Email*" tabindex="2" id="email"
 										onclick="isValidEmail()">
 									<div class="error"></div>
 								</div>
 								<div class="form-group">
 									<textarea name="message" placeholder="Message*" tabindex="3"
-										id="message" required></textarea>
+										id="message"></textarea>
 								</div>
-								<button type="submit" tabindex="4">Submit</button>
+								<button type="submit" tabindex="4" onclick="validateForm()">Submit</button>
 							</form>
 
 							<!-- Real Working Form - Simple Forms V3 -->
@@ -1698,7 +1982,7 @@
 
 							<h3 style="cursor: context-menu;">
 								<p class="p-v2 mw-440">
-									<img class="eml" src="./assets/images/email.png" alt=""> &nbsp;
+									<img class="eml" style="margin-top:15px;" src="./assets/images/email.png" alt=""> &nbsp;
 
 									<a href="mailto:connect@experientialetc.com">connect@experientialetc.com</a>
 								</p>
@@ -1707,7 +1991,7 @@
 						<div class="conatctnum">
 							<h3 style="cursor: context-menu;">
 								<p class="p-v2 mw-440">
-									<img onclick="myFunction()" class="phn" src="./assets/images/telephone.png" alt="">
+									<img onclick="myFunction()" class="phn" style="margin-top:15px"src="./assets/images/telephone.png" alt="">
 									&nbsp;
 									<a href="+91 9820032280">+91 9820032280</a>
 								</p>
@@ -1814,6 +2098,7 @@
 			</div>
 
 		</footer>
+				
 
 
 		<!-- Helper div for inserting before scripts
