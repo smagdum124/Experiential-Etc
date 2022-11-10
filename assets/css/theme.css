@@ -8533,7 +8533,7 @@ a.sk__gallery-nav-link:focus {
 }
 
 .sk__in-content-post-image {
-	padding-bottom: 63.78%;
+/* 	padding-bottom: 63.78%; */
 	width: 100%;
 	background-size: cover;
 	background-position: center;
